@@ -12,7 +12,16 @@
             <a href="index.html">Home</a> &nbsp;
             <a href="latest.html">Latest</a> &nbsp;
             <a href="reviews.html">Reviews</a> &nbsp;
-            <a href="about.html">About</a>
+            <a href="about.html">About</a> &nbsp;
+
+            <details class="settings">
+            <summary>Settings</summary>
+            <div class="settingsDropDown">
+            <button>Enable</button>
+            <p>Dark Mode 🌙</p>
+            <p>(this doesn't work yet)</p>
+            </div>
+            </details>
         </nav>
     </header>
 
@@ -43,31 +52,49 @@
                 <th id="title">Title</th>
                 <th id="genre">Genre</th>
                 <th id="year">Year</th>
-                <th id="rating">Rating</th>
+                <th id="rating" colspan="2">Rating</th>
             </tr>
             <tr>
                 <td headers="title">Game1</td>
                 <td headers="genre">Platformer</td>
                 <td headers="year">2024</td>
-                <td headers="rating">70</td>
+                <td class="ratingScoreOk" headers="rating">70</td>
+                <td><img class="leekEmote" src="images/leekYellow.png" alt="drawing of unimpressed leek" style="border: 3px solid rgb(217, 255, 0);"></td>
             </tr>
             <tr>
                 <td headers="title">Game2</td>
                 <td headers="genre">JRPG</td>
                 <td headers="year">2024</td>
-                <td headers="rating">100</td>
+                <td class="ratingScoreGood" headers="rating">100</td>
+                <td><img class="leekEmote" src="images/leekGreen.png" alt="drawing of happy leek" style="border: 3px solid rgb(0, 255, 8);"></td>
             </tr>
             <tr>
                 <td headers="title">Game3</td>
                 <td headers="genre">Card game</td>
                 <td headers="year">2024</td>
-                <td headers="rating">90</td>
+                <td class="ratingScoreGood" headers="rating">90</td>
+                <td><img class="leekEmote" src="images/leekGreen.png" alt="drawing of happy leek" style="border: 3px solid rgb(0, 255, 8);"></td>
             </tr>
             <tr>
                 <td headers="title">Game4</td>
                 <td headers="genre">Horror</td>
                 <td headers="year">2023</td>
-                <td headers="rating">95</td>
+                <td class="ratingScoreGood" headers="rating">95</td>
+                <td><img class="leekEmote" src="images/leekGreen.png" alt="drawing of happy leek" style="border: 3px solid rgb(0, 255, 8);"></td>
+            </tr>
+            <tr>
+                <td headers="title">Game5</td>
+                <td headers="genre">Puzzle</td>
+                <td headers="year">2022</td>
+                <td class="ratingScoreBad" headers="rating">50</td>
+                <td><img class="leekEmote" src="images/leekOrange.png" alt="drawing of sad leek" style="border: 3px solid rgb(255, 162, 0);"></td>
+            </tr>
+            <tr>
+                <td headers="title">Game6</td>
+                <td headers="genre">FPS</td>
+                <td headers="year">2022</td>
+                <td class="ratingScoreTerrible" headers="rating">25</td>
+                <td><img class="leekEmote" src="images/leekRed.png" alt="drawing of angry leek" style="border: 3px solid rgb(255, 0, 0);"></td>
             </tr>
         </table>
     </div>
