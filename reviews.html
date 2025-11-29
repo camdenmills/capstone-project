@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name ="description" content="Welcome to The Gaming Leek - This is the review page, filled to the brim with in depth reviews of the all the latest games!">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/gamingleekstyles.css">
+    <link rel="stylesheet" href="css/colorscheme.css">
 </head>
 <body>
     <header>
@@ -20,7 +22,6 @@
             <div class="settingsDropDown">
             <button>Enable</button>
             <p>Dark Mode 🌙</p>
-            <p>(this doesn't work yet)</p>
             </div>
             </details>
         </nav>
@@ -107,5 +108,23 @@
         <a href="mailto:cmills11@my.westga.edu">
         cmills11@my.westga.edu</a>
     </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const button = document.querySelector('.settingsDropDown button');
+
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+
+        button.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+
+            const isDarkMode = document.body.classList.contains('dark-mode');
+            localStorage.setItem('darkMode', isDarkMode);
+            
+            console.log('Dark mode toggled');
+        });
+    });
+</script>
 </body>
 </html>
