@@ -28,43 +28,53 @@
     </nav>
 </header>
 
+    <div class = "contentBox welcomeBox">
+        <h2>Welcome to The Gaming Leek!</h2>
+        <p>This website is a gaming blog, filled with the latest news and reviews from the gaming industry.</p>
+    </div>
+
     <div class = "recentPosts contentBox"> 
-        <h2>Recent Posts</h2>
-
-        <div class = "post"> <!--Post 1-->
-        <h3>This new game is great!</h3>
-        <p>this is a placeholder post.</p>
-        </div>
-
-        <div class = "post"> <!--Post 2-->
-            <h3>Is this the best game ever?</h3>
+            <h2>Recent Posts</h2>
+        <a href="posts/post_01.html" class="postLink">
+            <div class = "post"> <!--Post 1-->
+            <h3>This new game is great!</h3>
             <p>this is a placeholder post.</p>
-        </div>
-
-        <div class = "post"> <!--Post 3-->
-            <h3>Is this the best game ever?</h3>
-            <p>this is a placeholder post.</p>
-        </div>
-
+            </div>
+        </a>
+        <a href="posts/post_02.html" class="postLink">
+            <div class = "post"> <!--Post 2-->
+                <h3>How does this game's new update affect gameplay?</h3>
+                <p>this is a placeholder post.</p>
+            </div>
+        </a>
+        <a href="posts/post_03.html" class="postLink">
+            <div class = "post"> <!--Post 3-->
+                <h3>Is this the best game ever?</h3>
+                <p>this is a placeholder post.</p>
+            </div>
+        </a>
     </div>
 
     <div class = "recentPosts contentBox">
         <h2>Recent Reviews</h2>
-
-        <div class = "post"> <!--Review 1-->
-            <h3>Game Title</h3>
-            <p>This is a placeholder review.</p>
-        </div>
-
-        <div class = "post"> <!--Review 2-->
-            <h3>Game Title</h3>
-            <p>This is a placeholder review.</p>
-        </div>
-
-        <div class = "post"> <!--Review 3-->
-            <h3>Game Title</h3>
-            <p>This is a placeholder review.</p>
-        </div>
+        <a href="posts/review_01.html" class="postLink">
+            <div class = "post"> <!--Review 1-->
+                <h3>Game Title 1</h3>
+                <p>This is a placeholder review.</p>
+            </div>
+        </a>
+        <a href="posts/review_02.html" class="postLink">
+            <div class = "post"> <!--Review 2-->
+                <h3>Game Title 2</h3>
+                <p>This is a placeholder review.</p>
+            </div>
+        </a>
+        <a href="posts/review_03.html" class="postLink">
+            <div class = "post"> <!--Review 3-->
+                <h3>Game Title 3</h3>
+                <p>This is a placeholder review.</p>
+            </div>
+        </a>
 
     </div>
     <img src="images/leekLogo.png" alt="The Gaming Leek Logo" class="logo">
@@ -74,7 +84,6 @@
         <a href="mailto:cmills11@my.westga.edu:">
         cmills11@my.westga.edu</a>
 </footer>
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const button = document.querySelector('.settingsDropDown button');

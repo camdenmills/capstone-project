@@ -64,9 +64,33 @@ nav {
     margin: 40px auto;
 }
 
+.welcomeBox {
+    max-width: 900px;
+}
+
+.welcomeBox h2,
+.welcomeBox p {
+    padding: 10px;
+}
+
+.aboutSection {
+    padding: 10px;
+}
+
 .post { /*box containing individual posts*/
     border-radius: 10px;
     margin: 20px;
+}
+
+.post:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.postLink {
+    text-decoration: none;
+    color: inherit;
 }
 
 .post h3 {
@@ -74,6 +98,11 @@ nav {
 }
 .post p {
     margin:5px
+}
+
+.postContent {
+    padding: 20px;
+    padding-bottom: 500px;
 }
 
 .Summary {
